@@ -71,6 +71,16 @@ docs/                    discovery note, ADRs, diagrams
 - [ ] **Phase 7:** Rule-based portfolio risk
 - [ ] **Phase 8:** Demo video and case-study write-up
 
+## How we work
+
+Every change follows an AI-assisted workflow: **Inception → Breakdown → Grilling → Implementation (TDD) → Verification → PR**. Each coding slice lives on its own branch and lands in `main` only through a reviewed pull request.
+
+- [`CLAUDE.md`](CLAUDE.md): rules for AI assistants and humans (git, testing, domain)
+- [`docs/workflow.md`](docs/workflow.md): the stages, their outputs and exit criteria
+- [`docs/testing.md`](docs/testing.md): testing strategy per area
+- [`docs/specs/`](docs/specs/): inception, breakdown and slice specs, including grilling logs
+- [`.claude/skills/`](.claude/skills/): one skill per workflow stage
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
